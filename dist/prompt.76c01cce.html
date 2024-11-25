@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>c/side ScriptDraft Prompt Editor</title>
+    <link rel="stylesheet" href="/marketing-chrome-ext.e75b1c7f.css">
+    <script src="/prompt.bdab685b.js"></script>
+  </head>
+
+  <body>
+    <div class="max-w-3xl mx-auto p-6 flex flex-col gap-4">
+      <img src="/logo.3ae428be.svg" alt="logo" class="w-32 mb-6">
+
+      <label class="cside-input-label">
+        <span>OpenAI API Key</span>
+        <div class="cside-input-wrapper">
+          <input type="text" class="cside-input" placeholder="paste that thing in here!" id="cside-openai-key">
+        </div>
+      </label>
+
+      <label class="cside-input-label">
+        <span>Your prompt. Use $SITE_HOSTNAME to place site hostname. Use <span>$SCRIPT_DATA</span> to place script data.</span>
+        <div class="cside-input-wrapper">
+          <textarea class="cside-input" rows="14" placeholder="write your prompt here" id="cside-openai-prompt"></textarea>
+        </div>
+      </label>
+
+      <div class="w-full flex flex-row items-center gap-2 justify-end">
+        <button type="button" class="cside-button cside-button-primary" id="cside-openai-save">Save</button>
+      </div>
+
+      <div class="py-4">
+        <hr>
+      </div>
+
+      <div class="flex flex-col gap-2">
+        <p class="text-lg font-semibold">Script Data Format</p>
+        <p class="text-gray-600">The script data will be provided in the following format:</p>
+        <pre class="bg-gray-100 p-4 rounded-md font-[monospace] text-sm">
+[
+  "https://www.google-analytics.com/analytics.js",
+  "https://www.googletagmanager.com/gtm.js?id=GTM-XXXX"
+]
+        </pre>
+      </div>
+    </div>
+  <script src="/prompt.4a8e3cf1.js"></script></body>
+</html>

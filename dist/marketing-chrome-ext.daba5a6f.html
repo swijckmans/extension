@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <title>c/side ScriptView</title>
+
+    <script src="/marketing-chrome-ext.d90c48f9.js" defer=""></script>
+    <link rel="stylesheet" href="/marketing-chrome-ext.e75b1c7f.css">
+  </head>
+  <body class="p-4 w-[450px] flex flex-col gap-4">
+    <div class="flex flex-row items-center gap-2">
+      <img src="/logo.3ae428be.svg" class="w-32" draggable="false" alt="cside logo">
+      <h1 class="font-semibold text-2xl">ScriptDraft</h1>
+    </div>
+
+    <div class="flex flex-row items-start text-center">
+      <div class="flex-1">
+        <p>On this page</p>
+        <h3 class="text-xl font-semibold" id="cside-on-this-page-counter">0</h3>
+      </div>
+      <div class="flex-1">
+        <p>On this site</p>
+        <h3 class="text-xl font-semibold" id="cside-on-this-site-counter">0</h3>
+      </div>
+    </div>
+
+    <div class="flex flex-row gap-2 items-center w-full">
+      <button type="button" class="cside-button cside-button-secondary flex-1" id="cside-export-csv">Export CSV</button>
+<!--      <button type="button" class="cside-button cside-button-secondary flex-1" id="cside-export-text">Export Text</button>-->
+    </div>
+
+    <div class="flex flex-col gap-2">
+      <div class="mb-2">
+        <p class="text-lg font-semibold">Prompt Builder</p>
+<!--        <p class="text-gray-600">You have a prompt configured.</p>-->
+      </div>
+
+      <div class="flex flex-row items-center gap-2 w-full">
+        <button type="button" class="cside-button cside-button-primary flex-1" id="cside-run-prompt">Run Prompt</button>
+        <button type="button" class="cside-button cside-button-secondary w-[85px]" id="cside-edit-prompt">Edit</button>
+      </div>
+    </div>
+  </body>
+</html>

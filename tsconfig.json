@@ -1,0 +1,11 @@
+{
+  "extends": "@client-side-web/typescript-config/base.json",
+  "compilerOptions": {
+    "lib": ["ES2015", "dom"],
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "target": "ES5",
+  },
+  "include": ["src"],
+  "exclude": ["node_modules"],
+}

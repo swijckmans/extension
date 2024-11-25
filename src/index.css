@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+p {
+    @apply text-base;
+}
+
+.cside-button {
+    @apply flex items-center justify-center gap-2 px-[14px] py-[10px] typography-medium rounded-[5px] shadow-light [&>svg]:size-4 whitespace-nowrap transition-colors duration-75 select-none;
+}
+
+.cside-button-primary {
+    @apply bg-main-primary text-white hover:bg-main-primary/80;
+}
+
+.cside-button-secondary {
+    @apply border-main-300 text-main-800 hover:border-main-300 hover:text-main-900 hover:bg-main-50/80 border py-[9px];
+}
+
+.cside-input-label {
+   @apply flex flex-col gap-2 items-start w-full;
+}
+
+.cside-input-label > span {
+    @apply typography-medium text-main-600;
+}
+
+.cside-input-wrapper {
+    @apply flex items-center typography-small cursor-text bg-main-50 gap-2 text-main-600 w-full px-3 py-[10px] border border-main-300 rounded-lg shadow-light transition-all focus-within:ring-2 focus-within:ring-main-primary/15 focus-within:border-main-primary focus-within:text-main-800 [&>div>svg]:w-5 [&>div>svg]:h-5;
+}
+
+.cside-input {
+    @apply flex-1 outline-none bg-transparent disabled:cursor-not-allowed focus-visible:ring-0;
+}
